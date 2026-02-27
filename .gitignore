@@ -1,0 +1,47 @@
+# Secrets — never commit these
+.env
+
+# Compiled C++ artifacts
+build/
+bin/
+
+# Cython compiled output
+stt/*.so
+stt/*.c
+stt/build/
+stt/__pycache__/
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Downloaded models — too large for git, auto-downloaded by setup.sh
+models/whisper/
+models/tts/
+models/porcupine_params.pv
+
+# Wake word model — user-specific, created via Picovoice console
+models/assistant.ppn
+
+# Picovoice shared libraries — downloaded by setup.sh
+lib/libpv_recorder.so
+lib/libpv_porcupine.so
+
+# Runtime data — session logs and cache (user-specific)
+stt/lada_v2/memory/logs/
+stt/lada_v2/memory/audit/
+stt/lada_v2/memory/logs.db
+stt/lada_v2/memory/plan_cache.db
+stt/lada_v2/memory/context_store.json
+stt/friday_memory.json
+
+# Temp audio cache
+/tmp/friday_*.raw
+
+# Editor backup files
+*~
+*.old
+
+# OS files
+.DS_Store

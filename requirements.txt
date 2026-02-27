@@ -1,0 +1,26 @@
+# Python dependencies for FRIDAY AI Assistant
+# Install with: pip3 install -r requirements.txt
+
+# AI / LLM
+openai>=1.0.0
+httpx
+
+# Speech recognition
+SpeechRecognition
+faster-whisper
+
+# Build tools (for compiling google_stt.pyx)
+cython
+numpy
+
+# Screen reading
+# pyatspi — install via: sudo apt install python3-pyatspi
+
+# Input automation
+evdev
+
+# Vision (optional, for CV fallback in LADA)
+opencv-python
+
+# Environment
+python-dotenv

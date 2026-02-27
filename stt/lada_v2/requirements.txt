@@ -1,0 +1,18 @@
+# Core AI
+httpx            # async HTTP for OpenRouter API
+openai           # optional alternate AI backend
+
+# Screen reading (AT-SPI)
+pyatspi          # install via: sudo apt install python3-pyatspi
+
+# Input
+evdev            # raw kernel input: pip install evdev
+                 # permissions: sudo chmod 0660 /dev/uinput
+
+# System automation  
+# xdotool    → sudo apt install xdotool
+# scrot      → sudo apt install scrot
+# wmctrl     → sudo apt install wmctrl
+
+# Vision (optional - for CV fallback)
+opencv-python    # pip install opencv-python
